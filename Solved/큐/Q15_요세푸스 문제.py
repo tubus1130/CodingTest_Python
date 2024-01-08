@@ -6,14 +6,13 @@ popleft, append 반복하면서
 n = 5
 k = 2
 from collections import deque
-deque = deque()
+queue = deque()
 
 for i in range(1, n+1):
-  deque.append(i)
+  queue.append(i)
 
-while len(deque) != 1:
+while len(queue) != 1:
   for _ in range(k-1):
-    deque.append(deque.popleft())
-    print(deque)
-  deque.popleft()
-print(deque.popleft())
+    queue.append(queue.popleft())
+  queue.popleft()
+print(queue.popleft())
