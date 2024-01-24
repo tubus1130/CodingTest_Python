@@ -1,17 +1,14 @@
 # recursion 재귀
 '''
 1. 더 간단히, 더 작게
-2. base case(끝나는 지점) 설정
+2. base case(종료조건) 설정
 '''
 
 # factorial
 def factorial(n):
-  answer = 1
-
-  while n >= 1:
-    answer = answer * n
-    n = n - 1
-  return answer
+  if n == 1:
+    return 1
+  return n * factorial(n-1)
 
 print(factorial(3)) # 6
 
