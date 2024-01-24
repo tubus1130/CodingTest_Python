@@ -1,4 +1,8 @@
 # recursion 재귀
+'''
+1. 더 간단히, 더 작게
+2. base case(끝나는 지점) 설정
+'''
 
 # factorial
 def factorial(n):
